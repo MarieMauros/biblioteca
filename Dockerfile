@@ -7,4 +7,4 @@ COPY src ./src
 RUN chmod 777 mvnw
 RUN ./mvnw package
 RUN ls -l ./target
-CMD ["java", "-jar", "target/biblioteca-0.0.1-SNAPSHOT.war"]
+CMD ["java", "-jar", "target/sitebd-0.0.1-SNAPSHOT.war"]
