@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SGL - Sobre</title>
+    <link rel="stylesheet" th:href="@{/css/primary.css}">
+    <link rel="stylesheet" th:href="@{/css/secundaria.css}">
+</head>
+<body>
+    <!-- Header com links de navegação -->
+    <div class="top-nav-links">
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/cadastro}">Cadastro</a>
+        <a th:href="@{/listagem}">Lista</a>
+        <a th:href="@{/sobre}" class="disabled">Sobre</a>
+    </div>
+
+    <!-- Título Principal -->
+    <h1>Sobre o Projeto</h1>
+
+    <!-- Descrição do Projeto -->
+    <div class="sobre-descricao">
+        <p>Este projeto foi desenvolvido por <strong>Marilene Costa</strong> como parte da disciplina de <strong>Desenvolvimento para Servidores</strong>, ministrada pelo professor <strong>Alexandre Garcia</strong> no curso de <strong>Sistemas para Internet da FATEC Rubens Lara</strong>, em <strong>novembro de 2024</strong>.</p>
+        <p>Contato: <a href="mailto:marileneromao@gmail.com.br">marileneromao@gmail.com.br</a></p>
+        <img src="/img/sobre.jpg" alt="Marilene Costa" class="foto-perfil">
+    </div>
+</body>
+</html>

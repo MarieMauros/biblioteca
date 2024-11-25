@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SGL - Sucesso</title>
+    <link rel="stylesheet" th:href="@{/css/primary.css}">
+    <link rel="stylesheet" th:href="@{/css/secundaria.css}">
+</head>
+<body>
+    <!-- Header com links de navegação -->
+    <div class="top-nav-links">
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/cadastro}">Cadastro</a>
+        <a th:href="@{/listagem}">Lista</a>
+        <a th:href="@{/sobre}">Sobre</a>
+    </div>
+
+    <!-- Mensagem de Sucesso -->
+    <div class="sucesso-container">
+        <h1>O livro foi cadastrado com <strong>SUCESSO</strong>!</h1>
+        <img th:src="@{/img/sucesso.png}" alt="Sucesso">
+    </div>
+</body>
+</html>
+

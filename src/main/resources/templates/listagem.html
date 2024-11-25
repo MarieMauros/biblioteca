@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SGL - Listagem de Livros</title>
+    <link rel="stylesheet" th:href="@{/css/primary.css}">
+    <link rel="stylesheet" th:href="@{/css/secundaria.css}">
+</head>
+<body>
+    <!-- Header com links de navegação -->
+    <div class="top-nav-links">
+        <a href="/">Home</a>
+        <a href="/cadastro">Cadastro</a>
+        <a th:href="@{/}" class="disabled">Lista</a>       
+        <a href="/sobre">Sobre</a>
+    </div>
+
+    <!-- Título Principal -->
+    <h1>Listagem de Livros</h1>
+
+    <!-- Tabela de Listagem -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Sinopse</th>
+                <th>Autor</th>
+                <th>Editora</th>
+                <th>Ano</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="livro : ${livro}">
+                <td th:text="${livro.id}"></td>
+                <td th:text="${livro.titulo}"></td>
+                <td th:text="${livro.sinopse}"></td>
+                <td th:text="${livro.autor}"></td>
+                <td th:text="${livro.editora}"></td>
+                <td th:text="${livro.ano}"></td>
+                <td>
+                    <a th:href="@{/atualizar/{id}(id=${livro.id})}">Atualizar</a>
+                    <form th:action="@{/deletar/{id}(id=${livro.id})}" method="post" onsubmit="return confirm('Tem certeza de que deseja excluir este livro?');" style="display:inline;">
+                        <input type="submit" value="Apagar">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+</body>
+</html>

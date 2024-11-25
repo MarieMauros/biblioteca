@@ -1,0 +1,204 @@
+/* Estilos para o formulário de cadastro */
+.form-cadastro form {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 10px; /* Cantos arredondados */
+    font-family: Arial, sans-serif;
+    padding: 15px; /* Espaçamento interno */
+    margin: 20px auto; /* Ajuste para centralizar o formulário horizontalmente */
+    width: 90%; /* Reduzido para se ajustar melhor à tela */
+    max-width: 400px; /* Limita a largura máxima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para o formulário */
+    border: 2px solid #852524; /* Cor das bordas do formulário */
+    display: block; /* Garante que o formulário seja exibido como um bloco */
+    text-align: left; /* Alinha o texto à esquerda dentro do formulário */
+}
+
+/* Rótulos e campos de texto */
+.form-cadastro form label {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* Tamanho reduzido dos rótulos */
+    margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada */
+.form-cadastro form input[type="text"] {
+    font-family: Arial, sans-serif;
+    width: 100%; /* Faz os campos de entrada ocuparem toda a largura */
+    padding: 8px; /* Reduzido o padding para economizar espaço */
+    margin: 8px 0; /* Margem reduzida */
+    border: 2px solid #852524; /* Borda dos campos de entrada */
+    border-radius: 10px;
+    font-size: 1rem; /* Tamanho de fonte reduzido */
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos no cálculo da largura */
+}
+
+/* Estilo do botão */
+.form-cadastro form input[type="submit"] {
+    background-color: #852524; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    font-family: Arial, sans-serif;
+    padding: 8px 18px; /* Reduzido o padding do botão */
+    font-size: 1rem; /* Fonte reduzida no botão */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Define a largura do botão para 'auto' */
+    margin: 10px auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Garante que o botão seja exibido como um bloco */
+}
+
+.form-cadastro form input[type="submit"]:hover {
+    background-color: #ffeb3b; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo dos links no topo da página */
+.top-nav-links {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    background-color: #852524; /* Cor de fundo do botão */
+    padding: 10px; /* Adiciona padding para espaçamento */
+}
+
+.top-nav-links a {
+    color: #ffd6cc; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 10px; /* Espaçamento entre os links */
+    font-size: 1.2rem; /* Tamanho consistente para os links */
+    transition: color 0.3s ease;
+    padding: 7px;
+    border: 2px solid #ffd6cc; /* Borda da mesma cor do link */
+    border-radius: 10px;
+}
+
+.top-nav-links a:hover {
+    color: #ffeb3b; /* Amarelo ao passar o mouse */
+    border-color: #ffeb3b; /* Borda amarela ao passar o mouse */
+}
+
+/* Estilo do fundo da página */
+body {
+    background-color: #ffd6cc; /* Fundo da página com a cor #ffd6cc */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Garante que o body ocupe 100% da tela */
+    overflow: hidden; /* Impede a rolagem vertical */
+    margin-top: 0; /* Ajusta a distância do conteúdo para baixo, considerando a altura do header fixo */
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #852524;
+    text-align: center;
+}
+
+/* Estilo da tabela */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Fundo branco para a tabela */
+    border: 2px solid #852524; /* Borda da tabela */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para a tabela */
+    font-family: Arial, sans-serif;
+}
+
+table th, table td {
+    border: 1px solid #852524; /* Bordas das células */
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+table th {
+    background-color: #852524; /* Fundo das células do cabeçalho */
+    color: #ffd6cc; /* Cor do texto das células do cabeçalho */
+}
+
+table td a {
+    color: #852524; /* Cor dos links */
+    text-decoration: none;
+    border: 2px solid #852524; /* Borda dos links */
+    padding: 5px;
+    border-radius: 5px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+table td a:hover {
+    color: #ffeb3b; /* Amarelo ao passar o mouse */
+    border-color: #ffeb3b; /* Borda amarela ao passar o mouse */
+}
+
+table td form input[type="submit"] {
+    background-color: #852524; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem; /* Tamanho da fonte */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table td form input[type="submit"]:hover {
+    background-color: #ffeb3b; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para a descrição do projeto na página "Sobre" */
+.sobre-descricao {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff; /* Fundo branco para a descrição */
+    border: 2px solid #852524; /* Borda da descrição */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para a descrição */
+    font-family: Arial, sans-serif;
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para desabilitar o link */
+.top-nav-links a.disabled, .nav-links a.disabled {
+    color: #d3d3d3; /* Cor do link desabilitado */
+    border-color: #d3d3d3; /* Borda do link desabilitado */
+    pointer-events: none; /* Desabilita o clique */
+}
+
+/* Estilo para a mensagem de sucesso */
+.sucesso-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff; /* Fundo branco para a descrição */
+    border: 2px solid #852524; /* Borda da descrição */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para a descrição */
+    font-family: Arial, sans-serif;
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.sucesso-container h1 {
+    color: #852524; /* Cor do texto */
+    font-size: 2rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem abaixo do título */
+}
+
+.sucesso-container img {
+    max-width: 50%; /* Define o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Cantos arredondados da imagem */
+}
+
+/* Estilo para a foto de perfil */
+.foto-perfil {
+    width: 150px; /* Tamanho da imagem */
+    height: 150px; /* Tamanho da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem cubra a área */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
